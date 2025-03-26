@@ -24,7 +24,6 @@ class RangeConfigWriter(ConfigWriter):
         super().__init__(data, label, colour_lookup)
         import ete3
         tree = ete3.Tree(tree,format=1)
-        print(tree)
         unique_values = set(data.values())
 
         self.clades = []
