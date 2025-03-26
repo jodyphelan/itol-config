@@ -60,4 +60,4 @@ class RangeConfigWriter(ConfigWriter):
         with open(outfile,"w") as O:
             O.write(template % self.config)
             for label in self.clades:
-                O.write("%(node1)s,%(node2)s,#ffffff,,#000000,solid,2,%(label)s,#000000,4,normal" % (label))
+                O.write("%(node1)s,%(node2)s,#ffffff,,#000000,solid,2,%(label)s,#000000,4,normal\n" % (label))
