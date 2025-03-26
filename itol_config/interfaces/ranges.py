@@ -7,6 +7,7 @@ COLOR,#ff0000
 
 RANGE_TYPE,bracket
 RANGE_COVER,clade
+LABEL_SHIFT_X,50
 
 
 LEGEND_TITLE,%(legend_title)s
