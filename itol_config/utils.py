@@ -49,7 +49,7 @@ def load_data(input_file: str, id_column: str) -> Dict[str,dict]:
     columns = list(rows[0].keys())
     for column in columns:
         if column != id_column:
-            data[column] = {row[id_column]:row[column] for row in rows}
+            data[column] = {row[id_column]:row[column] for row in rows if row[column] != ""}
     return data
 
 def load_binary_matrix_data(input_file: str, id_column: str) -> Dict[str,dict]:
